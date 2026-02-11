@@ -1,5 +1,11 @@
 # about
-dockerコンテナの中身をスキャンして、脆弱性がないか確認するツール
+dockerイメージをスキャンして、脆弱性がないか確認するツール
+
+docker.ioなどから取得する場合、意図的かどうかにかかわらず
+脆弱性やバックドアなどが組み込まれている可能性がある。
+
+不用意に「docer run」するのではなく
+「docker pull」でイメージを持ってきてgrypeで確認してから使用する
 
 # manual
 1．[ここ](https://github.com/anchore/grype/releases)を参照して最新のパッケージを確認する。
